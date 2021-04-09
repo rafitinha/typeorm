@@ -20,12 +20,12 @@ export default class Class {
   @Column()
   duration: number;
 
-  @Column()
+  @Column({ nullable: true })
   exp: number;
 
-  @CreateDateColumn({ name: 'created_At' })
+  @CreateDateColumn({ name: 'created_at' })
   createdAt: Date;
 
-  @UpdateDateColumn({ name: 'update_At' })
+  @UpdateDateColumn({ name: 'updated_at' })
   updatedAt: Date;
 }
